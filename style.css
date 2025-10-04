@@ -1,14 +1,305 @@
+@font-face {
+    font-family: "samsung";
+    src: url(./SamsungOne-400.woff2);
+}
+
+@font-face {
+    font-family: sumsang;
+    src: url(./SamsungSharpSansBd.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: samsung;
+    font-weight: 800;
 
 }
 
 html,body{
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: #ffffff;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.first-section{
+    width: 100%;
+    height: 100%;
+    background: url(https://images.samsung.com/is/image/samsung/assets/in/home/09-2025/HOME_TS11_Hero-KV_1920x1080_pc_1.jpg?$1920_N_JPG$);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.navtop{
+    width: 100%;
+    height: 30px;
+    /* background-color: rgb(236, 0, 0); */
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+}
+.navtop a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(54, 54, 54); */
+    display: flex;
+    align-items: center;
+    /* position: fixed;
+    z-index: 100; */
+}
+
+.logo-div{
+
+    height: 74px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.samsung-logo {
+  width: 200px;
+  height: 74px;
+  background: white;
+  clip-path: path("M0,13.835V12.482H4.609V14.2a1.558,1.558,0,0,0,1.724,1.6A1.509,1.509,0,0,0,8,14.6a2.237,2.237,0,0,0-.03-1.322C7.076,10.976.981,9.931.208,6.333a6.531,6.531,0,0,1-.029-2.4C.654,1.045,3.122,0,6.184,0c2.438,0,5.8.585,5.8,4.458V5.719H7.7V4.612a1.492,1.492,0,0,0-1.605-1.6,1.452,1.452,0,0,0-1.575,1.2,2.468,2.468,0,0,0,.03.922c.5,2.059,7.017,3.167,7.73,6.887a8.481,8.481,0,0,1,.029,2.921C11.892,17.893,9.336,19,6.244,19,3,19,0,17.8,0,13.835Zm55.837-.062V12.421h4.549v1.691a1.533,1.533,0,0,0,1.695,1.6,1.49,1.49,0,0,0,1.665-1.168,2.147,2.147,0,0,0-.029-1.292c-.863-2.274-6.9-3.319-7.671-6.917a6.37,6.37,0,0,1-.03-2.367c.476-2.859,2.944-3.9,5.946-3.9,2.409,0,5.739.615,5.739,4.427v1.23H63.449V4.643a1.485,1.485,0,0,0-1.575-1.6,1.4,1.4,0,0,0-1.546,1.168,2.463,2.463,0,0,0,.029.922C60.832,7.194,67.284,8.27,68,11.959a8.314,8.314,0,0,1,.029,2.89c-.416,2.952-2.943,4.028-6.005,4.028C58.811,18.877,55.837,17.678,55.837,13.773Zm16.293.647A7.18,7.18,0,0,1,72.1,13.25V.523h4.341V13.65a5.023,5.023,0,0,0,.029.677,1.682,1.682,0,0,0,3.271,0,4.852,4.852,0,0,0,.03-.677V.523h4.341V13.25c0,.339-.03.984-.03,1.169-.3,3.319-2.825,4.4-5.976,4.4S72.428,17.739,72.13,14.419Zm35.739-.185a9.539,9.539,0,0,1-.059-1.168V5.6c0-.308.029-.861.059-1.169.386-3.319,2.973-4.365,6.036-4.365,3.033,0,5.708,1.045,6.006,4.365A8.781,8.781,0,0,1,119.94,5.6v.584H115.6V5.2a3.791,3.791,0,0,0-.059-.677,1.777,1.777,0,0,0-3.42,0,3.772,3.772,0,0,0-.059.829v8.117a5.1,5.1,0,0,0,.03.677,1.707,1.707,0,0,0,1.813,1.291,1.633,1.633,0,0,0,1.754-1.291,2.554,2.554,0,0,0,.03-.677V10.883h-1.754V8.3H120v4.765a9.377,9.377,0,0,1-.06,1.168c-.3,3.228-3,4.366-6.036,4.366S108.166,17.462,107.869,14.235Zm-60.5,4.027L47.245,1.845,44.272,18.262H39.931L36.987,1.845l-.118,16.417H32.587L32.943.554h6.988L42.1,14.388,44.272.554h6.987l.386,17.708Zm-22.835,0L22.211,1.845,19.831,18.262H15.194L18.344.554h7.642l3.152,17.708Zm72.665-.184L92.884,3.352l.238,14.726H88.9V.554h6.363l4.044,14.265L99.068.554h4.251V18.078Z");
+  cursor: pointer;
+  
+  transform: translate(30%,40%);
+}
+
+.samsung-links{
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 50px;
+}
+.samsung-links ul{
+    display: flex;
+    gap: 20px;
+}
+.samsung-links ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.samsung-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.samsung-icons{
+    display: flex;
+    gap: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+.search-icon{
+    font-size: 20px;
+
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.156);
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.421);
+}
+.ri-search-line{
+    margin-right: 5px;
+}
+.search-icon:hover{
+    transition: 0.3s;
+    border: 1px solid rgb(255, 255, 255);
+
+
+}
+
+.cart-icon{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+}
+.account-icon{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.samsung-buttons{
+    /* background-color: green; */
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 62%;
+    left: 22%;
+}
+
+
+.btn1{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn2{
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.btn2:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+
+.second-section{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/09-2025/Galaxy-S25-FE-Ecosystem_Home_Feature_KV_pc_1440x810_LTR.jpg?$1440_N_JPG$);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#btn1{
+    color: black;
+}
+#btn2{
+    color: black;
+    border: 1px solid black;
+}
+#btn2:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.samsung-buttons-2{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+
+
+
+
+.third-section{
+    width: 100%;
+    padding: 30px 40px;
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+}
+
+
+.boxes{
+    height: 45vh;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-size 0.5s ease-in-out;
+}
+
+.boxes:hover {
+animation: zoomin 0.9s ease-in-out forwards ;
+}
+
+@keyframes zoomin{
+    0%{background-size: 100%;}
+    100%{background-size: 130%;}
+    
+}
+
+
+
+
+
+
+.boxes h2{
+    color: black;
+    font-family: sumsang;
+    font-size: 1.5vw;
+}
+
+#one{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/Galaxy-Z-Flip7_Home_Feature_Card_560x560.jpg?$560_560_JPG$);
+    
+}
+
+#two{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/HOME_Feature-Card_Watch8-Classic_560x560.jpg?$560_560_JPG$);
+
+    
+}
+#three{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/mx_2507/HOME_Feature-Card_Watch8_560x560.jpg?$560_560_JPG$);
+
+   
+}
+#four{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250911/TabS10_Lite_featured_cards_560x560.jpg?$560_560_JPG$);
+}
+
+
+.buy-btn{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    display: none;
+}
+
+.boxes:hover .buy-btn{
+    display: block;
+    animation: btnup 0.5s ease-in-out;
+}
+
+@keyframes btnup{
+    0%{bottom: 0%;}
+    100%{bottom: 10%;}
+    
 }
 
 
@@ -19,3 +310,185 @@ html,body{
 
 
 
+
+
+.fourth-section{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250717/VD-KV-PC_1440x810.png?$1440_N_PNG$);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.text-box{
+    position: absolute;
+    top: 33%;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    /* background-color: gray; */
+}
+
+
+
+.tv-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tv-text h1{
+    font-family: sumsang;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.tv-text h3{
+    font-weight: 100;
+    font-size: 25px;
+}
+
+
+
+.fifth-section{
+    width: 100%;
+    padding: 30px 40px;
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+}
+
+
+#five{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card1_560X560.jpg?$560_560_JPG$);
+}
+#six{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card2_560X560.jpg?$560_560_JPG$);
+}
+
+#seven{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDVD_Feature_Card3_560X560.jpg?$560_560_JPG$);
+}
+
+
+
+#eight{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250807/M7.jpg?$560_560_JPG$);
+}
+
+
+
+
+
+.sixth-section{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250829/Washer_Dryer_KV_PC_1440x810_withoutText.jpg?$1440_N_JPG$);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.text-box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 50%;
+}
+
+.text-box-2 h1{
+    font-family: sumsang;
+    font-weight: bold;
+    font-size: 55px;
+}
+.text-box-2 h3{
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#btn4{
+    width: 80px;
+}
+
+
+
+
+.seventh-section{
+     width: 100%;
+    padding: 30px 40px;
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+}
+
+#nine{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250807/1.png?$560_560_PNG$);
+}
+
+#ten{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDDA_Feature_Card2_560X560.jpg?$560_560_JPG$);
+}
+#eleven{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/250813/WindFree_Inverter_Split_AC_AR60F19D13W_560X560_Fearture_card.jpg?$560_560_JPG$);
+}
+#twelve{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/ux3/home/MDDA_Feature_Card4_560X560.jpg?$560_560_JPG$);
+}
+
+
+
+
+
+
+
+.last-footer{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer-text{
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.footer-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
+
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+    align-items: center;
+    cursor: pointer;}
+
+.footer-icons p{
+    font-size: 14px;
+    cursor: pointer;
+}
